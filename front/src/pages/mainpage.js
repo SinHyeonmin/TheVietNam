@@ -3,10 +3,12 @@ import subLogo1 from "../assets/image2.png";
 import subLogo2 from "../assets/image3.png";
 import subLogo3 from "../assets/image4.png";
 import "./mainpage.css";
+import Header from "../components/header";
 
 function Mainpage() {
   return (
     <div>
+      <Header></Header>
       <div className="content_box">
         <img src={mainLogo} alt="mainLogo" id="mainLogo" />
         <div className="main_content1">

@@ -1,8 +1,10 @@
-import Home from './pages/home'
+import Consulting from './components/Consulting'
+import Customer from "./components/Customer";
+import Business from './pages/businessStart';
 
 function App() {
   return (
-    <Home></Home>
+    <Business></Business>
   );
 }
 
