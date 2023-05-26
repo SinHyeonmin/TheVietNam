@@ -8,7 +8,7 @@ import Header from '../components/header';
 function Mainpage() {
   return (
     <div>
-      <Header />
+      <Header></Header>
       <div className='content_box'>
         <img src={mainLogo} alt='mainLogo' id='mainLogo' />
         <div className='main_content1'>
