@@ -1,5 +1,18 @@
 
 
+.Customer{
+  white-space:pre-line;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span_style{
+  display: flex;
+  align-items: end;
+  width: 1200px;
+  font-size: 13px;
+}
 
 .div_color{
     

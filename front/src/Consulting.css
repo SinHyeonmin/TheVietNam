@@ -2,8 +2,12 @@
 
   .Consulting {
     white-space:pre-line;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
+
   .div_color{
     width: 1200px;
     margin: 0 auto;
@@ -92,3 +96,9 @@
   }
   
   
+  .span_style{
+    display: flex;
+    align-items: end;
+    width: 1200px;
+    font-size: 13px;
+  }

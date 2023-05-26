@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Consulting.css';
+import Header from './components/header';
 
 export default function Consulting() {
   const [emailDomain, setEmailDomain] = useState('');
@@ -44,93 +45,93 @@ export default function Consulting() {
   }
 
   return (
-    <div
-      className='Consulting'
-      style={{
-        backgroundColor: '#EEEEEE',
-      }}
-    >
+    <div>
+      <Header />
       <div
-        class='div_color'
+        className='Consulting'
         style={{
-          backgroundColor: '#FFFFFF',
-          width: '1400px',
+          backgroundColor: '#EEEEEE',
         }}
       >
-        <div class='div_border'>
-          <p style={{ fontSize: '50px' }}></p>
-        </div>
         <div
-          class='div_border'
+          class='div_color'
           style={{
-            height: '150px',
+            backgroundColor: '#FFFFFF',
+            width: '1400px',
           }}
         >
-          <h2 style={{ textAlign: 'center', marginTop: '50px' }}>창업 문의</h2>
-          <h4 style={{ textAlign: 'center' }}>
-            간편하고 확실한 프렌차이즈 창업으로 성공의 문을 열어보세요! 함께하는
-            우리의 지원으로 더 큰 성공을 이루어봅시다!
-          </h4>
-        </div>
-        <div
-          style={{
-            width: '1200px',
-            marginLeft: '100px',
-          }}
-        >
+          <div class='div_border'>
+            <p style={{ fontSize: '50px' }}></p>
+          </div>
           <div
+            class='div_border'
             style={{
-              blockSize: '400px',
-              marginBottom: '20px',
-              width: '1000px',
+              height: '150px',
             }}
           >
-            <div class='div_style'>
-              <label htmlFor='form_name' class='label_style'>
-                성 함<span style={{ color: 'red' }}> * </span>
-              </label>
-              <input
-                type='text'
-                name='form_name'
-                id='form_name'
-                required=''
-                className='input_style'
-              />
-            </div>
-            <div class='phone_border'>
-              <tr id='form_cellphpone1'>
-                <label class='label_style'>
-                  휴대폰<b style={{ color: 'red' }}> *</b>
+            <h2 style={{ textAlign: 'center', marginTop: '50px' }}>
+              창업 문의
+            </h2>
+            <h4 style={{ textAlign: 'center' }}>
+              간편하고 확실한 프렌차이즈 창업으로 성공의 문을 열어보세요!
+              함께하는 우리의 지원으로 더 큰 성공을 이루어봅시다!
+            </h4>
+          </div>
+          <div
+            style={{
+              blockSize: '1000px',
+              width: '1200px',
+              marginLeft: '100px',
+            }}
+          >
+            <div
+              style={{
+                marginBottom: '20px',
+                width: '1000px',
+              }}
+            >
+              <div class='div_style'>
+                <label htmlFor='form_name' class='label_style'>
+                  성 함<span style={{ color: 'red' }}> * </span>
                 </label>
-                <td>
-                  <div>
-                    <select
-                      style={{
-                        marginTop: '10px',
-                        marginBottom: '10px',
-                        marginLeft: '80px',
-                        height: '25px',
-                        width: '70px',
-                      }}
-                      name='request_cellphone1'
-                      id='request_cellphone1'
-                    >
-                      <option value='' disabled=''>
-                        선택
-                      </option>
-                      <option value='010' selected=''>
-                        010
-                      </option>
-                      <option value='011'>011</option>
-                      <option value='016'>016</option>
-                      <option value='016'>017</option>
-                      <option value='016'>018</option>
-                      <option value='019'>019</option>
-                    </select>
-                  </div>
-                </td>
-                <a style={{ margin: '10px' }}> </a>
-                <td>
+                <input
+                  type='text'
+                  name='form_name'
+                  id='form_name'
+                  required=''
+                  className='input_style'
+                />
+              </div>
+              <div class='div_style'>
+                <tr id='form_cellphpone1'>
+                  <label class='label_style'>
+                    휴대폰<b style={{ color: 'red' }}> *</b>
+                  </label>
+
+                  <select
+                    style={{
+                      marginTop: '10px',
+                      marginBottom: '10px',
+                      marginLeft: '80px',
+                      height: '25px',
+                      width: '70px',
+                    }}
+                    name='request_cellphone1'
+                    id='request_cellphone1'
+                  >
+                    <option value='' disabled=''>
+                      선택
+                    </option>
+                    <option value='010' selected=''>
+                      010
+                    </option>
+                    <option value='011'>011</option>
+                    <option value='016'>016</option>
+                    <option value='016'>017</option>
+                    <option value='016'>018</option>
+                    <option value='019'>019</option>
+                  </select>
+
                   <input
                     style={{ height: '20px', width: '70px' }}
                     type='text'
@@ -139,9 +140,7 @@ export default function Consulting() {
                     required=''
                     maxlength='4'
                   />
-                </td>
-                <a style={{ margin: '10px' }}> </a>
-                <td>
+
                   <input
                     style={{ height: '20px', width: '70px' }}
                     type='text'
@@ -150,181 +149,172 @@ export default function Consulting() {
                     required=''
                     maxlength='4'
                   />
-                </td>
-              </tr>
+                </tr>
+              </div>
+
+              <div class='div_style'>
+                <label htmlFor='form_email' class='label_style'>
+                  이메일
+                  <span className='required' style={{ color: 'red' }}>
+                    {' '}
+                    *
+                  </span>
+                </label>
+                <input
+                  type='text'
+                  name='form_email'
+                  id='form_email'
+                  className='email_style'
+                  style={{ marginLeft: '50px' }}
+                />
+                <em className='at'>@</em>
+                <input
+                  type='text'
+                  name='form_email_domain'
+                  id='form_email_domain2'
+                  value={emailDomain}
+                  className='email_style'
+                  onChange={handleDomainChange}
+                />
+
+                <select
+                  id='form_email_domain'
+                  name=''
+                  style={{ width: '100px', height: '25px' }}
+                  onChange={handleDomainChange}
+                >
+                  <option value=''>직접입력</option>
+                  <option value='naver.com'>naver.com</option>
+                  <option value='hanmail.net'>hanmail.net</option>
+                  <option value='google.com'>google.com</option>
+                </select>
+              </div>
+
+              <div class='div_style'>
+                <label htmlFor='form_content' class='label_style'>
+                  추가 내용<span> </span>
+                </label>
+                <textarea
+                  name='form_content'
+                  id='form_content'
+                  placeholder=' 추가문의 사항이 있는 경우 남겨주세요!'
+                  style={{
+                    marginLeft: '50px',
+                    marginTop: '10px',
+                    width: '1000px',
+                    height: '100px',
+                  }}
+                  onKeyUp={handleChange}
+                ></textarea>
+              </div>
             </div>
-
-            <div class='div_style'>
-              <label htmlFor='form_email' class='label_style'>
-                이메일
-                <span className='required' style={{ color: 'red' }}>
-                  {' '}
-                  *
-                </span>
-              </label>
-              <input
-                type='text'
-                name='form_email'
-                id='form_email'
-                className='email_style'
-                style={{ marginLeft: '50px' }}
-              />
-              <em className='at'>@</em>
-              <input
-                type='text'
-                name='form_email_domain'
-                id='form_email_domain2'
-                value={emailDomain}
-                className='email_style'
-                onChange={handleDomainChange}
-              />
-
-              <select
-                id='form_email_domain'
-                name=''
-                style={{ width: '100px', height: '25px' }}
-                onChange={handleDomainChange}
-              >
-                <option value=''>직접입력</option>
-                <option value='naver.com'>naver.com</option>
-                <option value='hanmail.net'>hanmail.net</option>
-                <option value='google.com'>google.com</option>
-              </select>
+            <div className='span_style'>
+              현재 {wordCount} / 최대 4000byte (한글 2000자, 영문 4000자)
             </div>
-
             <div
-              class='content'
               style={{
-                marginTop: '10px',
+                marginLeft: '100px',
+                marginTop: '20px',
               }}
             >
-              <label htmlFor='form_content' class='label_style'>
-                추가 내용<span> </span>
+              <label>
+                더빛남 창업문의 신청 관련 개인정보 수집동의
+                <span style={{ color: 'red' }}> (필수)</span>
               </label>
-              <textarea
-                name='form_content'
-                id='form_content'
-                placeholder=' 추가문의 사항이 있는 경우 남겨주세요!'
+              <div
                 style={{
-                  marginLeft: '100px',
+                  backgroundColor: '#EEEEEE',
+                  width: '800px',
+                  marginLeft: '150px',
+                  padding: '10px',
                   marginTop: '10px',
-                  width: '1000px',
-                  height: '100px',
-                }}
-                onKeyUp={handleChange}
-              ></textarea>
-              <span
-                style={{
-                  display: 'block',
-                  marginTop: '5px',
-                  marginBottom: '5px',
-                  textAlign: 'right',
-                  fontSize: '13px',
                 }}
               >
-                현재 <span id='xWordCnt'>{wordCount}</span>/ 최대 4000byte (한글
-                2000자, 영문 4000자)
-              </span>
+                1. 개인정보의 수집 및 이용 목적 - 브랜드 창업 문의에 대한 원활한
+                상담 - 더빛남 창업 관련 정보 안내 <br></br> 2. 수집하는
+                개인정보의 항목 - 이름, 휴대폰번호, 이메일<br></br> 3. 개인정보
+                보유 및 이용기간 - 이용 목적 달성 후, 내부규정에 따라 보관 및
+                지체없이 파기 ※귀하께서는 위 개인정보 수집, 이용에 대한 동의를
+                거부할 권리가 있으며, 동의 거부 시에는 창업상담 서비스 이용에
+                제한이 될 수 있습니다.
+              </div>
+              <input
+                style={{ marginTop: '15px' }}
+                type='radio'
+                value='1'
+                name='person_field'
+                id='person_y'
+              />
+              <label for='person_y'>&nbsp;</label>
+              <label for='person_y'>동의합니다.</label>
+              <input type='radio' value='0' name='person_field' id='person_n' />
+              <label for='person_n'>&nbsp;</label>
+              <label for='person_n'>동의하지 않습니다.</label>
             </div>
-          </div>
-          <div
-            style={{
-              marginLeft: '100px',
-              marginTop: '20px',
-            }}
-          >
-            <label>
-              더빛남 창업문의 신청 관련 개인정보 수집동의
-              <span style={{ color: 'red' }}> (필수)</span>
-            </label>
             <div
               style={{
-                backgroundColor: '#EEEEEE',
-                width: '800px',
-                marginLeft: '150px',
-                padding: '10px',
-                marginTop: '10px',
-              }}
-            >
-              1. 개인정보의 수집 및 이용 목적 - 브랜드 창업 문의에 대한 원활한
-              상담 - 더빛남 창업 관련 정보 안내 <br></br> 2. 수집하는 개인정보의
-              항목 - 이름, 휴대폰번호, 이메일<br></br> 3. 개인정보 보유 및
-              이용기간 - 이용 목적 달성 후, 내부규정에 따라 보관 및 지체없이
-              파기 ※귀하께서는 위 개인정보 수집, 이용에 대한 동의를 거부할
-              권리가 있으며, 동의 거부 시에는 창업상담 서비스 이용에 제한이 될
-              수 있습니다.
-            </div>
-            <input
-              style={{ marginTop: '15px' }}
-              type='radio'
-              value='1'
-              name='person_field'
-              id='person_y'
-            />
-            <label for='person_y'>&nbsp;</label>
-            <label for='person_y'>동의합니다.</label>
-            <input type='radio' value='0' name='person_field' id='person_n' />
-            <label for='person_n'>&nbsp;</label>
-            <label for='person_n'>동의하지 않습니다.</label>
-          </div>
-          <div
-            style={{
-              marginLeft: '100px',
-              marginTop: '20px',
-            }}
-          >
-            <label>마케팅 정보제공 용도로의 이용 동의</label>
-            <span style={{ color: 'red' }}> (선택)</span>
-            <div
-              style={{
-                backgroundColor: '#EEEEEE',
-                width: '800px',
-                marginLeft: '150px',
-                padding: '10px',
-                marginTop: '10px',
-              }}
-            >
-              수집한 위 개인정보를 더본코리아에서 제공하는 창업관련 자료 및
-              정보수신에 동의합니다. ※선택 사항 미 동의에 따른 상담서비스 이용
-              제한, 불이익은 없습니다. 다만, 더본코리아에서 제공하는 창업자료 및
-              제안정보 등은 제공받으실 수 없습니다.
-            </div>
-            <input
-              style={{ marginTop: '15px' }}
-              type='radio'
-              value='1'
-              name='person_field2'
-              id='person_y2'
-            />
-            <label for='person_y2'>&nbsp;</label>
-            <label for='person_y2'>동의합니다.</label>
-            <input type='radio' value='0' name='person_field2' id='person_n2' />
-            <label for='person_n2'>&nbsp;</label>
-            <label for='person_n2'>동의하지 않습니다.</label>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <button
-              style={{
-                background: '#085427',
-                fontSize: '10px',
+                marginLeft: '100px',
                 marginTop: '20px',
               }}
             >
-              문의 등록
-            </button>
-            <button
-              style={{
-                background: '#085427',
-                fontSize: '10px',
-                marginLeft: '20px',
-                marginTop: '20px',
-              }}
-            >
-              취소
-            </button>
-          </div>
-          <div>
-            <h1 style={{ fontSize: '100px' }}> </h1>
+              <label>마케팅 정보제공 용도로의 이용 동의</label>
+              <span style={{ color: 'red' }}> (선택)</span>
+              <div
+                style={{
+                  backgroundColor: '#EEEEEE',
+                  width: '800px',
+                  marginLeft: '150px',
+                  padding: '10px',
+                  marginTop: '10px',
+                }}
+              >
+                수집한 위 개인정보를 더본코리아에서 제공하는 창업관련 자료 및
+                정보수신에 동의합니다. ※선택 사항 미 동의에 따른 상담서비스 이용
+                제한, 불이익은 없습니다. 다만, 더본코리아에서 제공하는 창업자료
+                및 제안정보 등은 제공받으실 수 없습니다.
+              </div>
+              <input
+                style={{ marginTop: '15px' }}
+                type='radio'
+                value='1'
+                name='person_field2'
+                id='person_y2'
+              />
+              <label for='person_y2'>&nbsp;</label>
+              <label for='person_y2'>동의합니다.</label>
+              <input
+                type='radio'
+                value='0'
+                name='person_field2'
+                id='person_n2'
+              />
+              <label for='person_n2'>&nbsp;</label>
+              <label for='person_n2'>동의하지 않습니다.</label>
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+              <button
+                style={{
+                  background: '#085427',
+                  fontSize: '10px',
+                  marginTop: '20px',
+                }}
+              >
+                문의 등록
+              </button>
+              <button
+                style={{
+                  background: '#085427',
+                  fontSize: '10px',
+                  marginLeft: '20px',
+                  marginTop: '20px',
+                }}
+              >
+                취소
+              </button>
+            </div>
+            <div>
+              <h1 style={{ fontSize: '100px' }}> </h1>
+            </div>
           </div>
         </div>
       </div>

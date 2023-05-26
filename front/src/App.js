@@ -1,14 +1,19 @@
-import Consulting from './Consulting';
+import Home from './pages/home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Mainpage from './pages/mainpage';
 import Customer from './Customer';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import Consulting from './Consulting';
 
 function App() {
   return (
-    <div>
-      <Consulting />
-      <Customer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route exeat path='/' element={<Home />} />
+        <Route path='/main' element={<Mainpage />} />
+        <Route path='/customer' element={<Customer />} />
+        <Route path='/consulting' element={<Consulting />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
