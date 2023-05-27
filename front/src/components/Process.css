@@ -31,7 +31,8 @@ span {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid #085427;
+    border-top: 3px solid #085427;;
     height: 120px;
 }
 

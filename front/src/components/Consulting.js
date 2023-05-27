@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Consulting.css';
-import Header from './components/header';
 
 export default function Consulting() {
   const [emailDomain, setEmailDomain] = useState('');
@@ -46,7 +45,6 @@ export default function Consulting() {
 
   return (
     <div>
-      <Header />
       <div
         className='Consulting'
         style={{
@@ -54,7 +52,7 @@ export default function Consulting() {
         }}
       >
         <div
-          class='div_color'
+          className='div_color'
           style={{
             backgroundColor: '#FFFFFF',
             width: '1400px',
@@ -66,13 +64,13 @@ export default function Consulting() {
           <div
             class='div_border'
             style={{
-              height: '150px',
+              height: '107px',
             }}
           >
-            <h2 style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h2 style={{ textAlign: 'center', fontSize: '32px', marginTop: '16px' }}>
               창업 문의
             </h2>
-            <h4 style={{ textAlign: 'center' }}>
+            <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '60px' }}>
               간편하고 확실한 프렌차이즈 창업으로 성공의 문을 열어보세요!
               함께하는 우리의 지원으로 더 큰 성공을 이루어봅시다!
             </h4>
@@ -203,6 +201,7 @@ export default function Consulting() {
                     marginTop: '10px',
                     width: '1000px',
                     height: '100px',
+                    marginBottom: '10px',
                   }}
                   onKeyUp={handleChange}
                 ></textarea>

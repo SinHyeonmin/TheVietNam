@@ -16,7 +16,7 @@ function Nav({ isNavOpen, handleNavToggle }) {
           <Link className='link_line' to='/main'>
             <li>더빛남</li>
           </Link>
-          <Link className='link_line' to='/consulting'>
+          <Link className='link_line' to='/business'>
             <li>창업안내</li>
           </Link>
           <Link className='link_line' to='/customer'>

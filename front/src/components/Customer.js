@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Customer.css';
-import Header from './components/header';
+import Header from './header';
 
 export default function Customer() {
   const [emailDomain, setEmailDomain] = useState('');
