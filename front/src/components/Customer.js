@@ -48,6 +48,7 @@ export default function Customer() {
     <div>
       <Header />
       <div className='Customer' style={{ backgroundColor: '#EEEEEE' }}>
+        <div className='empty'></div>
         <div
           class='div_color'
           style={{ backgroundColor: '#FFFFFF', width: '1400px' }}
@@ -58,13 +59,19 @@ export default function Customer() {
           <div
             class='div_border'
             style={{
-              height: '150px',
+              height: '107px',
             }}
           >
-            <h2 style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h2
+              style={{
+                textAlign: 'center',
+                marginTop: '16px',
+                fontSize: '32px',
+              }}
+            >
               고객의 마음
             </h2>
-            <h4 style={{ textAlign: 'center' }}>
+            <h4 className='h4_style'>
               고객님의 소중한 의견을 들려주세요! 더 나은 서비스를 제공하기 위해
               노력하고 있습니다.
             </h4>
