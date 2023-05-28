@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Consulting.css';
+import TopButton from './TopButton';
 
 export default function Consulting() {
   const [emailDomain, setEmailDomain] = useState('');
@@ -67,10 +68,23 @@ export default function Consulting() {
               height: '107px',
             }}
           >
-            <h2 style={{ textAlign: 'center', fontSize: '32px', marginTop: '16px' }}>
+            <h2
+              style={{
+                textAlign: 'center',
+                fontSize: '32px',
+                marginTop: '16px',
+              }}
+            >
               창업 문의
             </h2>
-            <h4 style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '60px' }}>
+            <h4
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: '60px',
+              }}
+            >
               간편하고 확실한 프렌차이즈 창업으로 성공의 문을 열어보세요!
               함께하는 우리의 지원으로 더 큰 성공을 이루어봅시다!
             </h4>
@@ -267,10 +281,10 @@ export default function Consulting() {
                   marginTop: '10px',
                 }}
               >
-                수집한 위 개인정보를 더본코리아에서 제공하는 창업관련 자료 및
+                수집한 위 개인정보를 더빛남에서 제공하는 창업관련 자료 및
                 정보수신에 동의합니다. ※선택 사항 미 동의에 따른 상담서비스 이용
-                제한, 불이익은 없습니다. 다만, 더본코리아에서 제공하는 창업자료
-                및 제안정보 등은 제공받으실 수 없습니다.
+                제한, 불이익은 없습니다. 다만, 더빛남에서 제공하는 창업자료 및
+                제안정보 등은 제공받으실 수 없습니다.
               </div>
               <input
                 style={{ marginTop: '15px' }}
@@ -317,6 +331,7 @@ export default function Consulting() {
           </div>
         </div>
       </div>
+      <TopButton />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Customer.css';
 import Header from './header';
+import TopButton from './TopButton';
 
 export default function Customer() {
   const [emailDomain, setEmailDomain] = useState('');
@@ -409,6 +410,7 @@ export default function Customer() {
           </div>
         </div>
       </div>
+      <TopButton />
     </div>
   );
 }

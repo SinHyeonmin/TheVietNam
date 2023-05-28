@@ -4,6 +4,7 @@ import subLogo2 from '../assets/image3.png';
 import subLogo3 from '../assets/image4.png';
 import './mainpage.css';
 import Header from '../components/header';
+import TopButton from '../components/TopButton';
 
 function Mainpage() {
   return (
@@ -65,6 +66,7 @@ function Mainpage() {
           모두가 만족할 수 있는 브랜드로 거듭나길 원합니다.
         </div>
       </div>
+      <TopButton />
     </div>
   );
 }
