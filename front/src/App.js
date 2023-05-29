@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exeat path='/' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/main' element={<Mainpage />} />
         <Route path='/customer' element={<Customer />} />
         <Route path='/business' element={<Business />} />
