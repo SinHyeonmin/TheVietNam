@@ -441,7 +441,7 @@ export default function Customer() {
                 <button
                   style={{
                     background: '#085427',
-                    fontSize: '10px',
+                    fontSize: '15px',
                     marginTop: '20px',
                   }}
                   type='submit'
@@ -451,7 +451,7 @@ export default function Customer() {
                 <button
                   style={{
                     background: '#085427',
-                    fontSize: '10px',
+                    fontSize: '15px',
                     marginLeft: '20px',
                     marginTop: '20px',
                   }}
