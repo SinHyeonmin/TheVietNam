@@ -17,7 +17,7 @@ function Business() {
 
   return (
     <div>
-      <Header/>
+      <Header />
       <div className='choose_box'>
         <div
           className={`choose_box1 ${showConsulting ? 'active' : ''}`}

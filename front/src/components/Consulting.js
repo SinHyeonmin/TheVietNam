@@ -209,7 +209,7 @@ export default function Consulting() {
                 <textarea
                   name='form_content'
                   id='form_content'
-                  placeholder=' 추가문의 사항이 있는 경우 남겨주세요!'
+                  placeholder=' 추가문의 사항이 있는 경우 남겨주세요.'
                   style={{
                     marginLeft: '50px',
                     marginTop: '10px',

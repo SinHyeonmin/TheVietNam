@@ -15,27 +15,25 @@ function Mainpage() {
         <div className='main_content1'>
           <div className='main_content1_text'>[Brand]</div>
           <div className='main_content1_text2'>
-            정성과 진심을 담은 건강한 한그릇을 만들겠다는 신념으로
+            정성과 진심을 담은 건강한 한그릇을 만들겠다는 마음으로 손님을
             맞이하겠습니다.
           </div>
         </div>
         <div className='main_content2'>
           더빛남(The Viet Nam)은
           <br />
-          베트남(Vietnam)을 한국식으로 재해석하여
+          베트남(Vietnam)을 한국식으로 해석하여
           <br />
-          시간이 지날수록 더 빛나는 고유한 음식이라는 뜻을 더해 한국인 뿐만
-          아니라
+          더 빛나는 고유한 음식이라는 뜻을 더해
           <br />
-          전세계 모두가 즐길 수 있는 메뉴를 선보이고자 합니다.
+          모두 즐길수 있는 메뉴를 선보이고자 합니다.
         </div>
         <img src={subLogo1} alt='subLogo1' id='subLogo1' />
         <div className='main_content3'>
-          더빛남은 베트남식 쌀국수에 우리에게 익숙한 한국의 맛이 가미된 음식을
-          선보이고 있습니다.
+          더빛남은 베트남식 쌀국수에 한국의 맛을 가미해 선보이고 있습니다.
           <br />
-          좋은 고기와 몸에 좋은 한약재를 직접 6시간 동안 끓여 <br />
-          정성스러운 육수를 만들어 냅니다.
+          고기와 한약재를 잔득 넣어 6시간 동안 직접 끓여낸 <br />
+          정성스러운 육수로 맛있는 음식을 제공해드리겠습니다.
           <br />
           당일생산, 당일제공을 원칙으로 하며
           <br />
