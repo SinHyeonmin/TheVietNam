@@ -45,23 +45,28 @@ export default function Customer() {
 
     setWordCount(byteCount);
   }
-  const sendEmail = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const form = e.currentTarget; // 변경된 부분
+
     const templateParams = {
-      form_type1: document.getElementById('form_type1').value,
-      visit_day: document.getElementById('visit_day').value,
-      pay_time: document.getElementById('pay_time').value,
-      order_menu: document.getElementById('order_menu').value,
-      form_answer: document.getElementById('form_answer').value,
-      from_name: document.getElementById('form_name').value,
-      to_name: '고객문의',
-      request_cellphone1: document.getElementById('request_cellphone1').value,
-      request_cellphone2: document.getElementById('request_cellphone2').value,
-      request_cellphone3: document.getElementById('request_cellphone3').value,
-      form_email: document.getElementById('form_email').value,
-      form_email_domain2: document.getElementById('form_email_domain2').value,
-      form_title: document.getElementById('form_title').value,
-      form_content: document.getElementById('form_content').value,
+      form_type1: form.form_type1.value,
+      visit_day: form.visit_day.value,
+      pay_time: form.pay_time.value,
+      order_menu: form.order_menu.value,
+      form_answer: form.form_answer.value,
+      form_name: form.form_name.value,
+      to_name: '[TheVietNam] 고객문의',
+      request_cellphone1: form.request_cellphone1.value,
+      request_cellphone2: form.request_cellphone2.value,
+      request_cellphone3: form.request_cellphone3.value,
+      form_email: form.form_email.value,
+      form_email_domain: form.form_email_domain2.value,
+      form_title: form.form_title.value,
+      form_content: form.form_content.value,
     };
+
     emailjs
       .send(
         'service_cfecwow',
@@ -71,6 +76,7 @@ export default function Customer() {
       )
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
+        form.reset();
       })
       .catch((error) => {
         console.error('Error sending email:', error);

@@ -45,19 +45,24 @@ export default function Consulting() {
     setWordCount(byteCount);
   }
 
-  const sendEmail = () => {
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+
     const templateParams = {
-      from_name: document.getElementById('form_name').value,
+      form_name: form.form_name.value,
       to_name: 'Thevietnam가맹문의',
-      request_cellphone1: document.getElementById('request_cellphone1').value,
-      request_cellphone2: document.getElementById('request_cellphone2').value,
-      request_cellphone3: document.getElementById('request_cellphone3').value,
-      form_email: document.getElementById('form_email').value,
-      form_email_domain2: document.getElementById('form_email_domain2').value,
-      form_content: document.getElementById('form_content').value,
-      person_field: document.getElementById('person_field').value,
-      person_field2: document.getElementById('person_field2').value,
+      request_cellphone1: form.request_cellphone1.value,
+      request_cellphone2: form.request_cellphone2.value,
+      request_cellphone3: form.request_cellphone3.value,
+      form_email: form.form_email.value,
+      form_email_domain: form.form_email_domain2.value,
+      form_content: form.form_content.value,
+      person_field: form.person_field.value,
+      person_field2: form.person_field2.value,
     };
+
     emailjs
       .send(
         'service_cfecwow',
@@ -67,6 +72,7 @@ export default function Consulting() {
       )
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
+        form.reset();
       })
       .catch((error) => {
         console.error('Error sending email:', error);
@@ -157,7 +163,6 @@ export default function Consulting() {
                     type='text'
                     name='form_name'
                     id='form_name'
-                    required=''
                     className='input_style'
                   />
                 </div>
@@ -301,7 +306,7 @@ export default function Consulting() {
                 <input
                   style={{ marginTop: '15px' }}
                   type='radio'
-                  value='1'
+                  value='동의합니다.'
                   name='person_field'
                   id='person_y'
                 />
@@ -309,7 +314,7 @@ export default function Consulting() {
                 <label htmlFor='person_y'>동의합니다.</label>
                 <input
                   type='radio'
-                  value='0'
+                  value='동의하지 않습니다.'
                   name='person_field'
                   id='person_n'
                 />
@@ -341,7 +346,7 @@ export default function Consulting() {
                 <input
                   style={{ marginTop: '15px' }}
                   type='radio'
-                  value='1'
+                  value='동의합니다.'
                   name='person_field2'
                   id='person_y2'
                 />
@@ -349,7 +354,7 @@ export default function Consulting() {
                 <label htmlFor='person_y2'>동의합니다.</label>
                 <input
                   type='radio'
-                  value='0'
+                  value='동의하지 않습니다.'
                   name='person_field2'
                   id='person_n2'
                 />
