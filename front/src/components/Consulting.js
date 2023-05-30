@@ -98,7 +98,7 @@ export default function Consulting() {
         }}
       >
         <div
-          className='div_color'
+          className='div_color1'
           style={{
             backgroundColor: '#FFFFFF',
             width: '1400px',
@@ -137,7 +137,6 @@ export default function Consulting() {
 
           <div
             style={{
-              blockSize: '1000px',
               width: '1200px',
               marginLeft: '100px',
             }}

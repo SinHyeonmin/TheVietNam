@@ -1,11 +1,11 @@
 
-
-.Customer{
-  white-space:pre-line;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Customer {
+  white-space: pre-line;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .span_style{
   display: flex;
@@ -14,10 +14,19 @@
   font-size: 13px;
 }
 
-.div_color{
-  height: 1200px;
-  width: 1200px;
+.div_color {
+  height: 100%;
+  width: 100%;
   margin-top: 10px;
+}
+
+  @media screen and (max-width: 600px) {
+  .div_color {
+    display: flex;
+    align-items: center;
+      height: 100%;
+      width: 50%;
+  }
 }
 
 .h4_style{
@@ -27,8 +36,12 @@
   border-bottom: 3px solid #085427;
 }
 
+.div_border2 {
+  border-bottom: 3px solid #085427;
+}
+
 .div_style {
-  width: 1200px;
+  width: 100%;
     border-bottom: 1px solid #000;
   }
 

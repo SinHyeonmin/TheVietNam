@@ -106,7 +106,7 @@ export default function Customer() {
             <p style={{ fontSize: '150px' }}></p>
           </div>
           <div
-            className='div_border'
+            className='div_border2'
             style={{
               height: '107px',
             }}
@@ -135,7 +135,6 @@ export default function Customer() {
             <form onSubmit={sendEmail}>
               <div
                 style={{
-                  blockSize: '750px',
                   marginBottom: '10px',
                   width: '800px',
                 }}
