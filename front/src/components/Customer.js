@@ -179,6 +179,9 @@ export default function Customer() {
                     id='visit_day'
                     type='text'
                     placeholder='연도-월-일'
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
                 </div>
                 <div className='div_style'>
@@ -192,6 +195,9 @@ export default function Customer() {
                     id='pay_time'
                     className='input_style'
                     style={{ marginRight: 'px' }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
                   <select
                     className='none-css'
@@ -226,6 +232,9 @@ export default function Customer() {
                     name='order_menu'
                     id='order_menu'
                     className='input_style'
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
                 </div>
 
@@ -280,6 +289,9 @@ export default function Customer() {
                     id='form_name'
                     required=''
                     className='input_style'
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
                 </div>
 
@@ -323,6 +335,9 @@ export default function Customer() {
                         name='request_cellphone2'
                         required=''
                         maxlength='4'
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') e.preventDefault();
+                        }}
                       />
                     </td>
                     <td>
@@ -333,6 +348,9 @@ export default function Customer() {
                         name='request_cellphone3'
                         required=''
                         maxlength='4'
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') e.preventDefault();
+                        }}
                       />
                     </td>
                   </tr>
@@ -351,6 +369,9 @@ export default function Customer() {
                     id='form_email'
                     className='email_style'
                     style={{ marginLeft: '50px' }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
                   <em className='at'>@</em>
                   <input
@@ -360,6 +381,9 @@ export default function Customer() {
                     value={emailDomain}
                     className='email_style'
                     onChange={handleDomainChange}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
 
                   <select
@@ -385,6 +409,9 @@ export default function Customer() {
                     id='form_title'
                     required=''
                     className='title_style'
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
                 </div>
                 <div className='div_style'>

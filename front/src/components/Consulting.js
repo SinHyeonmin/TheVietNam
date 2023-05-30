@@ -164,6 +164,9 @@ export default function Consulting() {
                     name='form_name'
                     id='form_name'
                     className='input_style'
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
                 </div>
                 <div className='div_style'>
@@ -203,6 +206,9 @@ export default function Consulting() {
                       name='request_cellphone2'
                       required=''
                       maxlength='4'
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') e.preventDefault();
+                      }}
                     />
 
                     <input
@@ -212,6 +218,9 @@ export default function Consulting() {
                       name='request_cellphone3'
                       required=''
                       maxlength='4'
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') e.preventDefault();
+                      }}
                     />
                   </tr>
                 </div>
@@ -230,6 +239,9 @@ export default function Consulting() {
                     id='form_email'
                     className='email_style'
                     style={{ marginLeft: '50px' }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
                   <em className='at'>@</em>
                   <input
@@ -239,6 +251,9 @@ export default function Consulting() {
                     value={emailDomain}
                     className='email_style'
                     onChange={handleDomainChange}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') e.preventDefault();
+                    }}
                   />
 
                   <select
