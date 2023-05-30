@@ -52,7 +52,7 @@ export default function Consulting() {
 
     const templateParams = {
       form_name: form.form_name.value,
-      to_name: 'Thevietnam가맹문의',
+      to_name: '가맹문의',
       request_cellphone1: form.request_cellphone1.value,
       request_cellphone2: form.request_cellphone2.value,
       request_cellphone3: form.request_cellphone3.value,

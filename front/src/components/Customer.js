@@ -57,7 +57,7 @@ export default function Customer() {
       order_menu: form.order_menu.value,
       form_answer: form.form_answer.value,
       form_name: form.form_name.value,
-      to_name: '[TheVietNam] 고객문의',
+      to_name: '고객문의',
       request_cellphone1: form.request_cellphone1.value,
       request_cellphone2: form.request_cellphone2.value,
       request_cellphone3: form.request_cellphone3.value,
